@@ -9,7 +9,7 @@ module.exports = {
 	private: true,
 
 	// If true, users will be able to create accounts and access their uploaded files
-	enableUserAccounts: true,
+	enableUserAccounts: false,
 
 	/*
 		Here you can decide if you want lolisafe to serve the files or if you prefer doing so via nginx.
@@ -65,7 +65,7 @@ module.exports = {
 			Max file size allowed. Needs to be in MB
 			Note: When maxSize is greater than 1 MiB, you must set the client_max_body_size to the same as maxSize.
 		*/
-		maxSize: '80000MB',
+		maxSize: '512MB',
 
 		// The length of the random generated name for the uploaded files
 		fileLength: 32,
